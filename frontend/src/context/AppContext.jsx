@@ -7,7 +7,7 @@ export const AppContext = createContext();
 const AppContextProvider = (props) => {
   const currencySymbol = "$";
   const backendUrl =
-    import.meta.env.VITE_BACKEND_URL || "http://localhost:4000";
+    import.meta.env.VITE_BACKEND_URL || "https://doctor-appointment-system-backend-ieou.onrender.com";
 
   const [doctors, setDoctors] = useState([]);
   const [token, setToken] = useState(
